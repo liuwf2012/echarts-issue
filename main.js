@@ -5,7 +5,7 @@ $(document).ready(function(){
 })
 
 function loadMap() {
-  $.getJSON('http://test.cdn.sunmi.com/FILE/LatLng20180119.json', function (weiboData) {
+  $.getJSON('./data.json', function (weiboData) {
 
     weiboData = weiboData.map(function (serieData, idx) {
       var px = serieData[0] / 1000;
